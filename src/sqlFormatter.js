@@ -1,4 +1,5 @@
 import Db2Formatter from './languages/Db2Formatter';
+import FlinkSqlFormatter from './languages/FlinkSqlFormatter';
 import N1qlFormatter from './languages/N1qlFormatter';
 import PlSqlFormatter from './languages/PlSqlFormatter';
 import StandardSqlFormatter from './languages/StandardSqlFormatter';
@@ -17,6 +18,8 @@ import StandardSqlFormatter from './languages/StandardSqlFormatter';
  */
 export const format = (query, cfg = {}) => {
   switch (cfg.language) {
+    case 'fql':
+      return new FlinkSqlFormatter(cfg).format(query);
     case 'db2':
       return new Db2Formatter(cfg).format(query);
     case 'n1ql':

@@ -1,11 +1,12 @@
 {
-  "name": "sql-formatter-plus",
+  "name": "@AChangFeng/sql-formatter-plus",
   "version": "1.3.6",
   "description": "Formats whitespace in a SQL query to make it more readable",
   "license": "MIT",
   "main": "lib/sqlFormatter.js",
   "keywords": [
     "sql",
+    "fql",
     "formatter",
     "format",
     "n1ql",
@@ -13,7 +14,8 @@
   ],
   "authors": [
     "Rene Saarsoo",
-    "Uku Pattak"
+    "Uku Pattak",
+    "achengfeng"
   ],
   "files": [
     "dist",
@@ -36,10 +38,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kufii/sql-formatter-plus.git"
+    "url": "https://github.com/AChangFeng/sql-formatter-plus"
   },
   "bugs": {
-    "url": "https://github.com/kufii/sql-formatter-plus/issues"
+    "url": "https://github.com/AChangFeng/sql-formatter-plus/issues"
   },
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
