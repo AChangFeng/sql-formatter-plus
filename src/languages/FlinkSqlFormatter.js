@@ -620,7 +620,7 @@ export default class FlinkSqlFormatter {
         reservedTopLevelWords,
         reservedNewlineWords,
         reservedTopLevelWordsNoIndent,
-        stringTypes: ["''"],
+        stringTypes: ["''", '``'],
         openParens: ['('],
         closeParens: [')'],
         indexedPlaceholderTypes: [],
