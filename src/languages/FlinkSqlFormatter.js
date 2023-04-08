@@ -624,7 +624,7 @@ export default class FlinkSqlFormatter {
         openParens: ['('],
         closeParens: [')'],
         indexedPlaceholderTypes: [],
-        namedPlaceholderTypes: [],
+        namedPlaceholderTypes: ['$'],
         lineCommentTypes: ['//']
       });
     }

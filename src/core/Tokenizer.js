@@ -221,6 +221,9 @@ export default class Tokenizer {
   }
 
   getIdentNamedPlaceholderToken(input) {
+    if (!this.IDENT_NAMED_PLACEHOLDER_REGEX) {
+      return false
+    }
     return this.getPlaceholderTokenWithKey({
       input,
       regex: this.IDENT_NAMED_PLACEHOLDER_REGEX,
@@ -229,6 +232,9 @@ export default class Tokenizer {
   }
 
   getStringNamedPlaceholderToken(input) {
+    if (!this.STRING_NAMED_PLACEHOLDER_REGEX) {
+      return false
+    }
     return this.getPlaceholderTokenWithKey({
       input,
       regex: this.STRING_NAMED_PLACEHOLDER_REGEX,
@@ -237,6 +243,9 @@ export default class Tokenizer {
   }
 
   getIndexedPlaceholderToken(input) {
+    if (!this.INDEXED_PLACEHOLDER_REGEX) {
+      return false
+    }
     return this.getPlaceholderTokenWithKey({
       input,
       regex: this.INDEXED_PLACEHOLDER_REGEX,
